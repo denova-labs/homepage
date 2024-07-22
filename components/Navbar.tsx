@@ -12,6 +12,7 @@ import Container from './Container';
 import Drawer from './Drawer';
 import { HamburgerIcon } from './HamburgerIcon';
 import Logo from './Logo';
+import NextImage from 'next/image';
 
 const ColorSwitcher = dynamic(() => import('../components/ColorSwitcher'), { ssr: false });
 
@@ -69,7 +70,10 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+            {/* <Logo /> */}
+            <NextImage src={'/logo/dna.svg'} layout="fill" objectPosition="left center" />
+            {/* <CompanyName><span>D</span>e<span>N</span>ov<span>A</span> Labs</CompanyName> */}
+            {/* <NextImage src="/demo-illustration-1.svg" alt="DeNovA Labs" layout="fill" objectFit="cover" /> */}
           </LogoWrapper>
         </NextLink>
         <NavItemList>
@@ -130,11 +134,15 @@ const HamburgerMenuWrapper = styled.div`
 
 const LogoWrapper = styled.a`
   display: flex;
-  margin-right: auto;
+  // margin-right: auto;
   text-decoration: none;
 
   color: rgb(var(--logoColor));
 `;
+
+const CompanyName = styled.div`
+  font-size: 1.5em;
+`
 
 const NavItemWrapper = styled.li<Partial<SingleNavItem>>`
   background-color: ${(p) => (p.outlined ? 'rgb(var(--primary))' : 'transparent')};

@@ -7,6 +7,7 @@ import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import NextImage from 'next/image';
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -14,11 +15,14 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>the most innovative, organic, and creative solutions</CustomOverTitle>
+        <Heading>It's In Your DNA</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          At DeNovA Labs, we're on a mission to revolutionize the way we bootstrap new ideas.
+          As a cutting-edge software startup, we specialize in developing innovative solutions that empower individuals to transcend their biological coding.
+          Our visionary team leverages advanced technologies, including AI and bioinformatics, to create tools and products that push the boundaries.
+          {/* With a relentless drive to push the boundaries of what's possible, DeNovA Labs is not just building software—we're pioneering a future where everyone can break free from the constraints of their biology and achieve extraordinary outcomes.  */}
+          Join us as we kickstart a new era of limitless possibilities.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
@@ -26,13 +30,14 @@ export default function Hero() {
           </Button>
           <NextLink href="#whitepaper" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              More <span>&rarr;</span>
             </Button>
           </NextLink>
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>
-        <HeroIllustration />
+        {/* <HeroIllustration /> */}
+        <NextImage src="/logo/heroillustration.jpeg" alt="DeNovA Labs" width={500} height={500} objectFit="cover" />
       </ImageContainer>
     </HeroWrapper>
   );
