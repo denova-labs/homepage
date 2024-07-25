@@ -38,20 +38,11 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
 
       <div className="border-t py-4">
         <div className="container flex max-w-6xl items-center justify-between">
-          {/* <span className="text-muted-foreground text-sm">
-            Copyright &copy; 2024. All rights reserved.
-          </span> */}
+          <span className="text-muted-foreground text-sm">
+            DeNovA Labs LLC. &copy; 2023. All rights reserved.
+          </span>
           <p className="text-left text-sm text-muted-foreground">
-            Built by{" "}
-            <Link
-              href={siteConfig.links.twitter}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium underline underline-offset-4"
-            >
-              mickasmt
-            </Link>
-            . Hosted on{" "}
+            Hosted on{" "}
             <Link
               href="https://vercel.com"
               target="_blank"
@@ -60,14 +51,23 @@ export function SiteFooter({ className }: React.HTMLAttributes<HTMLElement>) {
             >
               Vercel
             </Link>
-            . Illustrations by{" "}
+            . Made By {" "}
             <Link
-              href="https://popsy.co"
+              href="https://github.com/allenmcao"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
             >
-              Popsy
+              Allen Cao
+            </Link>
+            . Illustrations from {" "}
+            <Link
+              href="https://designer.microsoft.com/image-creator"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium underline underline-offset-4"
+            >
+              Image Creator
             </Link>
           </p>
 

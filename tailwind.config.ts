@@ -20,6 +20,9 @@ const config = {
       padding: ".8rem",
     },
     extend: {
+      scale: {
+        '25': '.25',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

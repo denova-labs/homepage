@@ -2,51 +2,76 @@ import { FeatureLdg, InfoLdg, TestimonialType } from "types";
 
 export const infos: InfoLdg[] = [
   {
-    title: "Empower your projects",
+    title: "Welcome to innovation",
     description:
-      "Unlock the full potential of your projects with our open-source SaaS platform. Collaborate seamlessly, innovate effortlessly, and scale limitlessly.",
-    image: "/_static/illustrations/work-from-home.jpg",
+      "DeNovA Labs was founded with the intention to pool our collective knowledge, resources, and passion to rapidly kickstart new ventures.",
+    image: "/_static/illustrations/landing1.jpeg",
     list: [
       {
         title: "Collaborative",
-        description: "Work together with your team members in real-time.",
-        icon: "laptop",
+        description: "A tightly knit community of hackers and innovators.",
+        icon: "hearthandshake",
       },
       {
         title: "Innovative",
-        description: "Stay ahead of the curve with access constant updates.",
-        icon: "settings",
+        description: "Always aiming to be ahead of the curve.",
+        icon: "lightbulb",
       },
       {
-        title: "Scalable",
+        title: "Smart",
         description:
-          "Our platform offers the scalability needed to adapt to your needs.",
-        icon: "search",
+          "Leveraging AI wherever possible to drive smarter solutions.",
+        icon: "brain",
       },
     ],
   },
   {
-    title: "Seamless Integration",
+    title: "Learn from our best",
     description:
-      "Integrate our open-source SaaS seamlessly into your existing workflows. Effortlessly connect with your favorite tools and services for a streamlined experience.",
-    image: "/_static/illustrations/work-from-home.jpg",
+      "We want to commit to sharing our experiences and knowledge for projects that promote open source. Take a look at our knowledge hub to gain insight into our story. Available material is split among:",
+    image: "/_static/illustrations/landing2.jpeg",
     list: [
       {
-        title: "Flexible",
+        title: "Public",
         description:
-          "Customize your integrations to fit your unique requirements.",
-        icon: "laptop",
+          "Anyone can access these documents.",
+        icon: "users",
       },
       {
-        title: "Efficient",
-        description: "Streamline your processes and reducing manual effort.",
-        icon: "search",
+        title: "Subscribers",
+        description: "Only subscribers to our newsletter can access these.",
+        icon: "userplus",
       },
       {
-        title: "Reliable",
+        title: "Members",
         description:
-          "Rely on our robust infrastructure and comprehensive documentation.",
-        icon: "settings",
+          "Exclusive to our existing members.",
+        icon: "usercheck",
+      },
+    ],
+  },
+  {
+    title: "Powerful Network",
+    description:
+      "With members from all over the place, our members have a wealth of experience to draw and connect from. ",
+    image: "/_static/illustrations/landing3-2.jpeg",
+    list: [
+      {
+        title: "Multi-domain",
+        description:
+          "Software engineers, product managers, marketers, designers, analysts, and more!",
+        icon: "bookopen",
+      },
+      {
+        title: "Multicultural",
+        description: "Access to many different markets and local contacts.",
+        icon: "flag",
+      },
+      {
+        title: "Multilingual",
+        description:
+          "Able to communicate and tap into with many different markets.",
+        icon: "languages",
       },
     ],
   },
