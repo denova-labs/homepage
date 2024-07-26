@@ -16,6 +16,11 @@ export const BLOG_CATEGORIES: {
 ];
 
 export const BLOG_AUTHORS = {
+  allenmcao: {
+    name: "allenmcao",
+    image: "/_static/avatars/mickasmt.png",
+    twitter: "allenmcao",
+  },
   mickasmt: {
     name: "mickasmt",
     image: "/_static/avatars/mickasmt.png",

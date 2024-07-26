@@ -11,27 +11,18 @@ import { HeroParallax } from "@/components/ui/hero-parallax";
 import linguifyThumbnail from '@/public/_static/projects/linguify.png'
 import platefullThumbnail from '@/public/_static/projects/platefull.png'
 import onecardThumbnail from '@/public/_static/projects/onecard.png'
-
-export const metadata = constructMetadata({
-  title: "Pricing – SaaS Starter",
-  description: "Explore our subscription plans.",
-});
+import sthreadsThumbnail from '@/public/_static/projects/sthreads.png'
+import soughtThumbnail from '@/public/_static/projects/sought.png'
+import dogwatchThumbnail from '@/public/_static/projects/dogwatch.png'
 
 export default async function ProjectsPage() {
-  const user = await getCurrentUser();
-
-  let subscriptionPlan;
-  if (user && user.id) {
-    subscriptionPlan = await getUserSubscriptionPlan(user.id);
-  }
-
   return (
     <div className="flex w-full flex-col gap-16 py-8 md:py-8">
       <HeroParallax products={[
         {
-          title: "Linguify",
-          link: "https://chromewebstore.google.com/detail/linguify/geonaepbohggoefocbfgkifmlbafapfn",
-          thumbnail: linguifyThumbnail
+          title: "OneCard",
+          link: "https://onecard.denova.ai",
+          thumbnail: onecardThumbnail
         },
         {
           title: "Platefull",
@@ -39,15 +30,26 @@ export default async function ProjectsPage() {
           thumbnail: platefullThumbnail
         },
         {
-          title: "OneCard",
-          link: "https://onecard.denova.ai",
-          thumbnail: onecardThumbnail
+          title: "Linguify",
+          link: "https://chromewebstore.google.com/detail/linguify/geonaepbohggoefocbfgkifmlbafapfn",
+          thumbnail: linguifyThumbnail
+        },
+        {
+          title: "DogWatch",
+          link: "https://dogwatch.denova.ai",
+          thumbnail: dogwatchThumbnail
+        },
+        {
+          title: "SThreads",
+          link: "https://sthreads.denova.ai",
+          thumbnail: sthreadsThumbnail
+        },
+        {
+          title: "Sought",
+          link: "https://sought.denova.ai",
+          thumbnail: soughtThumbnail
         },
       ]}/>
-      <PricingCards userId={user?.id} subscriptionPlan={subscriptionPlan} />
-      <hr className="container" />
-      <ComparePlans />
-      <PricingFaq />
     </div>
   );
 }

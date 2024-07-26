@@ -203,7 +203,7 @@ export default function BentoGrid() {
               </div>
               <div className="relative z-10 mt-8 space-y-1.5 text-center">
                 <h2 className="text-lg font-medium text-foreground">
-                  Faster than light
+                  
                 </h2>
                 <p className="text-muted-foreground">
                   With organization resources setup for rapid content delivery, our apps are fast and performant.

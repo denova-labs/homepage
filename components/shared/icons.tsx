@@ -34,6 +34,12 @@ import {
   BookOpen,
   Flag,
   Languages,
+  BicepsFlexed,
+  Cat,
+  Citrus,
+  Dog,
+  Fan,
+  Sparkles
 } from "lucide-react";
 
 export type Icon = LucideIcon;
@@ -176,4 +182,10 @@ export const Icons = {
   bookopen: BookOpen,
   flag: Flag,
   languages: Languages,
+  bicepsflexed: BicepsFlexed,
+  cat: Cat,
+  citrus: Citrus,
+  dog: Dog,
+  fan: Fan,
+  sparkles: Sparkles,
 };

@@ -24,7 +24,7 @@ export const IconsDish = ({
         
         className="flex justify-between gap-4 sm:gap-16 flex-row"
       >
-        {icons.map((icon) => (
+        {icons.map((icon,index) => (
           <motion.span 
             initial={{ opacity: 0.5, y: 110 }}
             whileInView={{ opacity: 0.85, y: 100, color: "#c4b5fd" }}
@@ -34,6 +34,7 @@ export const IconsDish = ({
               ease: "easeInOut",
             }}
             className="size-4"
+            key={"icondish-icon" + index}
           >
             {icon}
           </motion.span>
