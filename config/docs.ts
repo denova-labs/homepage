@@ -20,45 +20,49 @@ export const docsConfig: DocsConfig = {
           href: "/docs",
         },
         {
-          title: "Installation",
-          href: "/docs/installation",
+          title: "Access",
+          href: "/docs/access",
         },
       ],
     },
     {
-      title: "Configuration",
+      title: "Homepage Development",
       items: [
         {
+          title: "Installation",
+          href: "/docs/homepagedev/installation",
+        },
+        {
           title: "Authentification",
-          href: "/docs/configuration/authentification",
+          href: "/docs/homepagedev/authentification",
         },
         {
           title: "Blog",
-          href: "/docs/configuration/blog",
+          href: "/docs/homepagedev/blog",
         },
         {
           title: "Components",
-          href: "/docs/configuration/components",
+          href: "/docs/homepagedev/components",
         },
         {
           title: "Config files",
-          href: "/docs/configuration/config-files",
+          href: "/docs/homepagedev/config-files",
         },
         {
           title: "Database",
-          href: "/docs/configuration/database",
+          href: "/docs/homepagedev/database",
         },
         {
           title: "Email",
-          href: "/docs/configuration/email",
+          href: "/docs/homepagedev/email",
         },
         {
           title: "Markdown files",
-          href: "/docs/configuration/markdown-files",
+          href: "/docs/homepagedev/markdown-files",
         },
         {
           title: "Subscriptions",
-          href: "/docs/configuration/subscriptions",
+          href: "/docs/homepagedev/subscriptions",
         },
       ],
     },

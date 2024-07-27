@@ -23,7 +23,6 @@ export const footerLinks: SidebarNavItem[] = [
       { title: "About Us", href: "/aboutus" },
       { title: "Terms", href: "/terms" },
       { title: "Privacy", href: "/privacy" },
-      { title: "Security", href: "/security" },
     ],
   },
   {
@@ -37,9 +36,8 @@ export const footerLinks: SidebarNavItem[] = [
     title: "Docs",
     items: [
       { title: "Introduction", href: "/docs" },
-      { title: "Access", href: "/docs" },
-      { title: "Guides", href: "/docs" },
-      { title: "Components", href: "docs" },
+      { title: "Access", href: "/docs/access" },
+      { title: "Guides", href: "/docs/guides" },
     ],
   },
 ];

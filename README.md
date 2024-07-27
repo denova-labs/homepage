@@ -1,22 +1,18 @@
-<a href="https://next-saas-stripe-starter.vercel.app">
-  <img alt="SaaS Starter" src="public/_static/og.jpg">
-  <h1 align="center">Next SaaS Stripe Starter</h1>
-</a>
+<h1 align="center">DeNovA Labs Homepage</h1>
 
 <p align="center">
-  Start at full speed with SaaS Starter !
+  Landing website for company activities and news!
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/miickasmt">
-    <img src="https://img.shields.io/twitter/follow/miickasmt?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="Mickasmt Twitter follower count" />
+  <a href="https://twitter.com/allenmcao">
+    <img src="https://img.shields.io/twitter/follow/allenmcao?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="allenmcao Twitter follower count" />
   </a>
 </p>
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#installation"><strong>Installation</strong></a> ·
-  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
   <a href="#author"><strong>Author</strong></a> ·
   <a href="#credits"><strong>Credits</strong></a>
 </p>
@@ -24,23 +20,22 @@
 
 ## Introduction
 
-Empower your next project with the stack of Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui, and Stripe.
+This is primarily a landing website designed to advertise the company projects and get donors.
+It is built with Next.js 14, Prisma, Neon, Auth.js v5, Resend, React Email, Shadcn/ui, and Stripe.
 <br/>
-All seamlessly integrated with the SaaS Starter to accelerate your development and saas journey.
+Stripe integration is currently not used at the moment, but could be integrated in future for some bundled subscription across products or paid access to certain materials.
+<br/>
+The base boilerplate is the SaaS starter kit by mickasmt.
 
-## Installation
+## Developing
 
-Clone & create this repo locally with the following command:
-
-```bash
-npx create-next-app my-saas-project --example "https://github.com/mickasmt/next-saas-stripe-starter"
-```
-
-Or, deploy with Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmickasmt%2Fnext-saas-stripe-starter)
+Clone & create this repo locally
 
 ### Steps
+> [!NOTE]  
+> I use [pnpm](https://www.npmjs.com/package/pnpm) package for installation and faster building.
+>
+> Use this command to install globally: `npm i -g pnpm`
 
 1. Install dependencies using pnpm:
 
@@ -48,13 +43,24 @@ Or, deploy with Vercel:
 pnpm install
 ```
 
-2. Copy `.env.example` to `.env.local` and update the variables.
+2. Copy `.env.example` to `.env.local` and update the variables. Only AUTH_SECRET is required to generate next step.
 
 ```sh
 cp .env.example .env.local
 ```
 
-3. Start the development server:
+3. Generate the prisma client with the current secrets if not in auto-ran already.
+
+```sh
+npx prisma generate
+```
+or
+
+```sh
+pnpm postinstall
+```
+
+4. Start the development server:
 
 ```sh
 pnpm run dev
@@ -68,10 +74,6 @@ pnpm run dev
 ## Roadmap
 - [ ] Upgrade eslint to v9
 - [ ] Add resend for success subscriptions
-
-## Tech Stack + Features
-
-https://github.com/mickasmt/next-saas-stripe-starter/assets/62285783/828a4e0f-30e3-4cfe-96ff-4dfd9cd55124
 
 ### Frameworks
 
@@ -114,15 +116,3 @@ https://github.com/mickasmt/next-saas-stripe-starter/assets/62285783/828a4e0f-30
 ### Miscellaneous
 
 - [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
-
-## Author
-
-Created by [@miickasmt](https://twitter.com/miickasmt) in 2023, released under the [MIT license](https://github.com/shadcn/taxonomy/blob/main/LICENSE.md).
-
-## Credits
-
-This project was inspired by shadcn's [Taxonomy](https://github.com/shadcn-ui/taxonomy), Steven Tey’s [Precedent](https://github.com/steven-tey/precedent), and Antonio Erdeljac's [Next 13 AI SaaS](https://github.com/AntonioErdeljac/next13-ai-saas).
-
-- Shadcn ([@shadcn](https://twitter.com/shadcn))
-- Steven Tey ([@steventey](https://twitter.com/steventey))
-- Antonio Erdeljac ([@YTCodeAntonio](https://twitter.com/AntonioErdeljac))

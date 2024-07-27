@@ -297,7 +297,7 @@ const cards = [
   {
     description: "Product Manager",
     title: "Jessica Fan",
-    src: "/_static/workedat/grail.svg",
+    src: "",
     icon: <Icons.fan />,
     ctaText: "More",
     ctaLink: "https://ui.aceternity.com/templates",
