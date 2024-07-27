@@ -6,15 +6,14 @@
 
 <p align="center">
   <a href="https://twitter.com/allenmcao">
-    <img src="https://img.shields.io/twitter/follow/allenmcao?style=flat&label=miickasmt&logo=twitter&color=0bf&logoColor=fff" alt="allenmcao Twitter follower count" />
+    <img src="https://img.shields.io/twitter/follow/allenmcao?style=flat&label=allenmcao&logo=twitter&color=0bf&logoColor=fff" alt="allenmcao Twitter follower count" />
   </a>
 </p>
 
 <p align="center">
   <a href="#introduction"><strong>Introduction</strong></a> ·
   <a href="#installation"><strong>Installation</strong></a> ·
-  <a href="#author"><strong>Author</strong></a> ·
-  <a href="#credits"><strong>Credits</strong></a>
+  <a href="#features"><strong>Features</strong></a> ·
 </p>
 <br/>
 
@@ -71,9 +70,12 @@ pnpm run dev
 >
 > Use this command for update your project: `ncu -i --format group`
 
-## Roadmap
-- [ ] Upgrade eslint to v9
-- [ ] Add resend for success subscriptions
+## Features
+
+### TODO
+- [ ] Redo landing page features to align with goals more
+- [ ] Include project preview on projects page
+- [ ] Connect globe animation to member locations
 
 ### Frameworks
 
