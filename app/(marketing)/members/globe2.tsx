@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import Globe from 'react-globe.gl'
 import { useState, useEffect, useRef } from 'react';
 import * as THREE from 'three';

@@ -14,8 +14,10 @@ import onecardThumbnail from '@/public/_static/projects/onecard.png'
 import sthreadsThumbnail from '@/public/_static/projects/sthreads.png'
 import soughtThumbnail from '@/public/_static/projects/sought.png'
 import dogwatchThumbnail from '@/public/_static/projects/dogwatch.png'
-import Globe2 from './globe2';
 import MemberList from "./memberlist";
+
+import dynamic from "next/dynamic"
+const Globe2 = dynamic(() => import('./globe2'), {ssr: false})
 
 export default async function MembersPage() {
   return (
